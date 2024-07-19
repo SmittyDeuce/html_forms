@@ -6,20 +6,68 @@
     <title>HTML Forms</title>
 </head>
 <body>
+    <!-- Task 1: Email Input Form -->
     <h2>Task 1</h2>
     <form>
+        <!-- Label for email input, linked to the input field via id -->
         <label for="email">Email:</label>
+        <!-- Email input field with placeholder text and required attribute -->
         <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        <!-- Submit button for the form -->
         <button type="submit">submit</button>
+        <!-- Reset button to clear the form inputs -->
         <button type="reset">reset</button>
     </form>
 
+    <!-- Task 2: Number Input Form -->
     <h2>Task 2</h2>
     <form>
+        <!-- Label for number input, linked to the input field via id -->
         <label for="number">Enter a quantity:</label>
+        <!-- Number input field with placeholder text and range constraints -->
         <input type="number" name="number" id="number" placeholder="Enter a number" min="0" max="50" step="1">
+        <!-- Submit button for the form -->
         <button type="submit">submit</button>
+        <!-- Reset button to clear the form inputs -->
         <button type="reset">reset</button>
+    </form>
+
+    <!-- Task 3: Date Input Form -->
+    <h2>Task 3</h2>
+    <form>
+        <!-- Label for date input, linked to the input field via id -->
+        <label for="date">Enter Date:</label>
+        <!-- Date input field with placeholder text and date range constraints -->
+        <input type="date" name="date" id="date" placeholder="select a date" min="2024-01-01" max="2024-12-31" required>
+        <!-- Submit button for the form -->
+        <button type="submit">submit</button>
+        <!-- Reset button to clear the form inputs -->
+        <button type="reset">reset</button>
+    </form>
+
+    <!-- Task 4: Range Input Form -->
+    <h2>Task 4</h2>
+    <form>
+        <!-- Label for range input, linked to the input field via id -->
+        <label for="range-input">Food Rating:</label>
+        <!-- Range input field with min, max, and step attributes, and an oninput event to update the displayed value -->
+        <input type="range" name="range" id="range-input" min="0" max="10" step="1" oninput="document.getElementById('range-value').textContent = this.value">
+        <!-- Span element to display the current value of the range input -->
+        <span id="range-value">5</span>
+        <br><br>
+        <!-- Submit button for the form -->
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Task 5: Color Input Form -->
+    <h2>Task 5</h2>
+    <form>
+        <!-- Label for color input, linked to the input field via id -->
+        <label for="color">Choose Color:</label>
+        <!-- Color input field allowing users to select a color -->
+        <input type="color" name="color" id="color">
+        <!-- Submit button for the form -->
+        <button type="submit">Submit</button>
     </form>
 </body>
 </html>
